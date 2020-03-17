@@ -12,25 +12,30 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+     <junitJ.version>5.3.1</junitJ.version>
+     <mockitoCore.version>2.21.0</mockitoCore.version>
+     <mockitoJ.version>2.23.0</mockitoJ.version>
+     <surefirePlugin.version>2.19.1</surefirePlugin.version>
+     <platformSurefire.version>2.19.1</platformSurefire.version>
   </properties>
   
   <dependencies>
     <dependency>
      <groupId>org.junit.jupiter</groupId>
      <artifactId>junit-jupiter-engine</artifactId>
-     <version>5.3.1</version>
+     <version>${junitJ.version}</version>
      <scope>test</scope>
 	</dependency>
 	<dependency>
      <groupId>org.mockito</groupId>
      <artifactId>mockito-core</artifactId>
-     <version>2.21.0</version>
+     <version>${mockitoCore.version}</version>
      <scope>test</scope>
 	</dependency>
 	<dependency>
      <groupId>org.mockito</groupId>
      <artifactId>mockito-junit-jupiter</artifactId>
-     <version>2.23.0</version>
+     <version>${mockitoJ.version}</version>
      <scope>test</scope>
 </dependency>
   </dependencies>
@@ -39,12 +44,12 @@
     <plugins>
        <plugin>
     	<artifactId>maven-surefire-plugin</artifactId>
-  		<version>2.19.1</version>
+  		<version>[${surefirePlugin.version}]</version>
     	<dependencies>
          <dependency>
              <groupId>org.junit.platform</groupId>
              <artifactId>junit-platform-surefire-provider</artifactId>
-             <version>1.0.1</version>
+             <version>[${platformSurefire.version}]</version>
           </dependency>
      	 </dependencies>
 		</plugin>
