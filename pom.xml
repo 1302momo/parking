@@ -16,7 +16,7 @@
      <mockitoCore.version>2.21.0</mockitoCore.version>
      <mockitoJ.version>2.23.0</mockitoJ.version>
      <surefirePlugin.version>2.19.1</surefirePlugin.version>
-     <platformSurefire.version>2.19.1</platformSurefire.version>
+     <platformSurefire.version>1.0.1</platformSurefire.version>
   </properties>
   
   <dependencies>
