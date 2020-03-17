@@ -44,12 +44,12 @@
     <plugins>
        <plugin>
     	<artifactId>maven-surefire-plugin</artifactId>
-  		<version>[${surefirePlugin.version}]</version>
+  		<version>${surefirePlugin.version}</version>
     	<dependencies>
          <dependency>
              <groupId>org.junit.platform</groupId>
              <artifactId>junit-platform-surefire-provider</artifactId>
-             <version>[${platformSurefire.version}]</version>
+             <version>${platformSurefire.version}</version>
           </dependency>
      	 </dependencies>
 		</plugin>
